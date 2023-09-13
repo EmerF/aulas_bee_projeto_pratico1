@@ -1,0 +1,11 @@
+# 1 Clone do repositório
+git@github.com:EmerF/aulas_bee_projeto_pratico1.git
+# checkout na branch com seu nome
+git checkout -b emerson origin/emerson
+# Após cada alteração importante fazer commit. Verificar o ponto (.) no final do comando(inclui todos os arquivos alterados)
+git add .
+#Adicionar mensagem
+git commit -m "Arquivo mongo"
+# Push para o repositório com nome da branch
+git push origin emerson
+
