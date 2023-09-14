@@ -1,3 +1,5 @@
 use produtosAmebev;
 db.createCollection("cervejas");
 db.createCollection("refrigerantes");
+db.cervejas.insert({ nome: "Skol 269ml", preco: 3 });
+db.refrigerantes.insert({ nome: "Pepsi", preco: 6 });
