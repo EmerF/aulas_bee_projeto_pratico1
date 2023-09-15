@@ -1,10 +1,4 @@
-use catalogodb;
-db.createCollection("produtos");
-db.produtos.insert({nome: "Produto 1", valor: 10.99, descricao: "Descrição do Produto 1"});
-db.produtos.insert({nome: "Produto 2", valor: 15.99, descricao: "Descrição do Produto 2"});
-db.produtos.insert({nome: "Produto 3", valor: 20.99, descricao: "Descrição do Produto 3"});
-db.createCollection("tipos_produtos");
-db.tipos_produtos.insert({nome: "Tipo 1", categoria: "Categoria 1"});
-db.tipos_produtos.insert({nome: "Tipo 2", categoria: "Categoria 2"});
-db.tipos_produtos.insert({nome: "Tipo 3", categoria: "Categoria 3"});
-db.produtos.updateMany({}, { $set: { tipo_produto_id: ObjectId() } });
+docker run --name mongodb -d mongo:latest;
+docker exec -it mongodb mongosh;
+show databases;
+use mydatabase;

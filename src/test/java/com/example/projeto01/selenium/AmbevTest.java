@@ -1,31 +1,33 @@
 package com.example.projeto01.selenium;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AmbevTest {
 
-    private WebDriver driver;
-
-    @BeforeClass
-    public void setUp() throws MalformedURLException {
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new FirefoxOptions());
-    }
-
     @Test
-    public void testAmbev() {
-        driver.get("https://www.ambev.com.br/");
-    }
+    public void testLogin() throws MalformedURLException {
 
-    @AfterClass
-    public void tearDown() {
+        String seleniumHubURL = "http://localhost:4444/wd/hub";
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("firefox");
+        capabilities.setCapability("version", "76.0");
+        capabilities.setPlatform(Platform.ANY);
+
+        WebDriver driver = new RemoteWebDriver(new URL(seleniumHubURL), capabilities);
+        driver.get("https://www.ambev.com.br/");
+        // Your test code here...
+        // senha do sessions do selenium (http://localhost:4444): secret
+        // Close the WebDriver
         driver.quit();
+
     }
 }
+
