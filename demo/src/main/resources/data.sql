@@ -17,11 +17,11 @@ VALUES
 -- Alteração do nome de 2 produtos
 UPDATE produto
 SET nome_produto = 'Brahma'
-WHERE id = 1;
+WHERE nome_produto = 'Wals';
 
 UPDATE produto
 SET nome_produto = 'Skol'
-WHERE id = 2;
+WHERE nome_produto = 'Lipton';
 
 -- Criação da tabela "tipo_produto"
 CREATE TABLE IF NOT EXISTS tipo_produto (
@@ -30,16 +30,32 @@ CREATE TABLE IF NOT EXISTS tipo_produto (
     categoria VARCHAR(50)
 );
 
+-- Inserção de 3 tipos de produtos
+INSERT INTO tipo_produto (nome_tipo, categoria)
+VALUES
+    ('Cerveja', 'Bebida alcóolica'),
+    ('Chá gelado', 'Bebida não alcóolica'),
+    ('Refrigerante', 'Bebida não alcóolica');
+
 -- Criação do relacionamento entre as tabelas "produto" e "tipo_produto"
 ALTER TABLE produto
 ADD COLUMN tipo_produto_id INT;
 
-ALTER TABLE produto
-ADD FOREIGN KEY (tipo_produto_id) REFERENCES tipo_produto(id);
+UPDATE produto
+SET tipo_produto_id = 1
+WHERE nome_produto IN ('Brahma', 'Skol');
 
--- Inserção de 3 tipos de produtos
-INSERT INTO tipo_produto (nome_tipo, categoria)
-VALUES
-    ('Tipo 1', 'Categoria 1'),
-    ('Tipo 2', 'Categoria 2'),
-    ('Tipo 3', 'Categoria 3');
+UPDATE produto
+SET tipo_produto_id = 2
+WHERE nome_produto = 'Pepsi';
+
+-- Selecione produtos
+SELECT * FROM produto;
+
+-- Selecione tipos de produtos
+SELECT * FROM tipo_produto;
+
+-- Selecione produtos com informações de tipo de produto usando INNER JOIN
+SELECT p.*, tp.nome_tipo, tp.categoria
+FROM produto p
+INNER JOIN tipo_produto tp ON p.tipo_produto_id = tp.id;
