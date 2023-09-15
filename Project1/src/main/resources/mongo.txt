@@ -1,3 +1,27 @@
+-- finding image on docker:
+
 docker run --name mongodb -d mongo:latest;
+
+-- connection:
+
 docker exec -it mongodb mongosh;
-use mydatabase;
+
+-- creating db:
+
+use AmbevProducts;
+
+-- creating collection:
+
+db.createCollection("products");
+
+-- adding data to a collection:
+
+db.products.insert({name: "Walls", price: 14.99, description: "Cerveja - 600ml", origin: "Belo Horizonte"});
+
+-- list data in the collection:
+
+db.products.find();
+
+-- exit db:
+
+exit;
