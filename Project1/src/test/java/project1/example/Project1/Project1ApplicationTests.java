@@ -7,16 +7,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class Project1ApplicationTests {
 
-	ProductRegistration pr = new ProductRegistration();
+	ProductRegistration productRegistration = new ProductRegistration();
 
 	@Test
 	void testProductRegistrationSuccess(){
-	String product = pr.registration("Corona");
+	String product = productRegistration.registration("Corona","Beer");
 	Assertions.assertEquals("Product Successfully Registered!", product);
 }
 	@Test
 	void testErrorWhenRegisteringProduct(){
-		String product = pr.registration("Spaten");
-		Assertions.assertNotEquals("Error when registering product!", product);
+		String product = productRegistration.registration("Corona", "Wine");
+		Assertions.assertEquals("Error when registering product!", product);
 	}
 }
