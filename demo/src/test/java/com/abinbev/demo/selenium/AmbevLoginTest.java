@@ -1,4 +1,4 @@
-package com.imbev.demo.selenium;
+package com.abinbev.demo.selenium;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Platform;
