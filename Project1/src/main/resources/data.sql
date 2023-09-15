@@ -50,6 +50,12 @@ CREATE TABLE product_type (
     ('Ipa', 'Cerveja'),
     ('Pilsen', 'Cerveja');
 
+-- setar valores na coluna product_type_id
+
+    UPDATE product SET product_type_id = 1 WHERE id = 1;
+    UPDATE product SET product_type_id = 2 WHERE id = 2;
+    UPDATE product SET product_type_id = 3 WHERE id = 3;
+
 --  selects
 
     SELECT * FROM product ;
