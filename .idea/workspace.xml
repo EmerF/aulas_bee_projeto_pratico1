@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="142a50cb-005b-4eb3-9d38-3f77d811197a" name="Changes" comment="" />
+    <list default="true" id="dcc9cc1e-eb81-4943-b3b5-ab1242c712c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mongo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/cadastroProduto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techempowers/projeto1/teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techempowers/projeto1/teste.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/Projeto1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/Projeto1ApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -56,10 +70,20 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VS1FKagoaUFnRez2laO0assQy2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,13 +92,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/michaella/TrilhaJava/tech-empowers"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="142a50cb-005b-4eb3-9d38-3f77d811197a" name="Changes" comment="" />
+      <changelist id="dcc9cc1e-eb81-4943-b3b5-ab1242c712c3" name="Changes" comment="" />
       <created>1694814563960</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

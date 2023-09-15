@@ -1,0 +1,3 @@
+docker exec -it mongodb mongo;
+show databases;
+use mydatabase;
