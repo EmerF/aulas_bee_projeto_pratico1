@@ -62,5 +62,5 @@ SELECT * FROM type_product;
 
 -- SELECT USE DE INNER JOIN 
 
-SELECT DISTINCT product.name_product, product.price_product AS tipo FROM product 
-INNER JOIN type_product ON product.type_product_id = type_product_id;
+SELECT product.name_product AS `name`, product.price_product AS price FROM product 
+INNER JOIN type_product ON product.type_product_id = type_product.type_id;
