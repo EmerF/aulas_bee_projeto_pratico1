@@ -1,0 +1,7 @@
+docker run --name mongodb -d mongo:latest
+
+docker exec -it mongodb mongosh
+
+show databases
+
+use mydatabase
