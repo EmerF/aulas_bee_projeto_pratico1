@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.8.3" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.seleniumhq.selenium" artifactId="selenium-chrome-driver" version="4.8.3" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
