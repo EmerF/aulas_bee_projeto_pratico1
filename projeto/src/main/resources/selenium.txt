@@ -1,0 +1,6 @@
+Instruções para execução:
+docker pull selenium/standalone-firefox
+docker run -d -p 4444:4444 --name selenium-firefox selenium/standalone-firefox
+Rodar o teste
+verificar o localhost: http://localhost:4444/ > Sessions > Executar o teste, senha: secret
+
