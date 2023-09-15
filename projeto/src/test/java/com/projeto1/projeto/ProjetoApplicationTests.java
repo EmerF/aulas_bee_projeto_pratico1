@@ -9,11 +9,12 @@ import javax.swing.*;
 @SpringBootTest
 class ProjetoApplicationTests {
 
+	CadastroProduto cp = new CadastroProduto();
+
 	@Test
 	void contextLoads() {
+		System.out.println("Teste!");
 	}
-
-	CadastroProduto cp = new CadastroProduto();
 
 	@Test
 	void testCadastroProduto(){
@@ -24,7 +25,7 @@ class ProjetoApplicationTests {
 	@Test
 	void testErroCadastroProduto(){
 		String produto = cp.cadastrar("erro");
-		Assertions.assertNotEquals("Erro no cadastro do produto!", produto);
+		Assertions.assertNotEquals("Produto cadastrado!", produto);
 	}
 
 }

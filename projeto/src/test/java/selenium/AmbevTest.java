@@ -26,9 +26,8 @@ public class AmbevTest {
         // Create a Remote WebDriver instance
         WebDriver driver = new RemoteWebDriver(new URL(seleniumHubURL), capabilities);
         driver.get("https://www.ambev.com.br");
-        // Your test code here...
-        // Close the WebDriver
-        //driver.quit();
+
+        // driver.quit();
 
     }
 }

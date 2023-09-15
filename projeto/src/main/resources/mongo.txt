@@ -1,5 +1,19 @@
-docker run --name mongodb -d mongo:latest;
-docker exec -it mongodb mongosh;
-use mydatabase;
+# Usando o docker para encontrar imagem do MongoDB
+docker run --name mongodb -d mongo:latest
+# Comando para realizar a conexão com o banco de dados:
+docker exec -it mongodb mongosh
+# Comando para criar um banco de dados:
+use ambev
 
+# Para criar coleção:
+db.createCollection("produtos");
 
+# Para inserir dados na coleção:
+db.produtos.insert({nome: "Sukita", preco: 5.49, descricao: "Refrigerante"});
+db.produtos.insert({nome: "Mikes Ice Tangerina", preco: 5.99, descricao: "Drink pronto"});
+
+# Para listar a coleção:
+db.produtos.find();
+
+# Para sair do banco de dados:
+exit;
