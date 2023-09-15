@@ -1,0 +1,37 @@
+# Usando o docker, podemos rodar um container com o banco de dados não relacional MongoDB
+# Para isso, basta executar o comando abaixo:
+
+docker run --name mongodb -p 27017:27017 -d -t mongo
+
+# Para verificar se o container está rodando, execute o comando abaixo:
+
+docker ps
+
+# Para acessar o container, execute o comando abaixo:
+
+docker exec -it mongodb bash
+
+# Para acessar o banco de dados, execute o comando abaixo:
+
+mongo
+
+# Para criar um banco de dados, execute o comando abaixo:
+
+use ambev;
+
+# Para criar uma coleção, execute o comando abaixo:
+
+db.createCollection("produtos");
+
+# Para inserir um documento na coleção, execute o comando abaixo:
+
+db.produtos.insert({nome: "Skol", preco: 2.5, descricao: "Cerveja Pilsen"});
+
+# Para listar todos os documentos da coleção, execute o comando abaixo:
+
+db.produtos.find();
+db.produtos.find().pretty();
+
+# Para sair do banco de dados, execute o comando abaixo:
+
+exit;
