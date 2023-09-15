@@ -1,0 +1,12 @@
+package techempowers;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+public class TechEmpowersApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(TechEmpowersApplication.class, args);
+    }
+
+}
