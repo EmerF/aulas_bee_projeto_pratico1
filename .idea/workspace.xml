@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc9cc1e-eb81-4943-b3b5-ab1242c712c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mongo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/cadastroProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/SeleniumTest/AmbevLocalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techempowers/projeto1/teste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techempowers/projeto1/teste.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/Projeto1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/techempowers/projeto1/Projeto1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,9 +91,54 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/michaella/TrilhaJava/tech-empowers"
+    "last_opened_file_path": "/home/michaella/Projects/order-cancellation/api/pom.xml"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Projeto1ApplicationTests.testErrorCadastroProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projeto1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techempowers.projeto1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techempowers.projeto1" />
+      <option name="MAIN_CLASS_NAME" value="com.techempowers.projeto1.Projeto1ApplicationTests" />
+      <option name="METHOD_NAME" value="testErrorCadastroProduto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Projeto1ApplicationTests.testSuccessCadastroProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projeto1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techempowers.projeto1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techempowers.projeto1" />
+      <option name="MAIN_CLASS_NAME" value="com.techempowers.projeto1.Projeto1ApplicationTests" />
+      <option name="METHOD_NAME" value="testSuccessCadastroProduto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Projeto1ApplicationTests.testErrorCadastroProduto" />
+        <item itemvalue="JUnit.Projeto1ApplicationTests.testSuccessCadastroProduto" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
