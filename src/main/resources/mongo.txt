@@ -1,0 +1,5 @@
+use AmbevProducts;
+db.createCollection("cervejas");
+db.createCollection("agua");
+db.cervejas.insert({ nome: "Spaten 350ml", preco: 5 });
+db.agua.insert({ nome: "Ama", preco: 3 });
