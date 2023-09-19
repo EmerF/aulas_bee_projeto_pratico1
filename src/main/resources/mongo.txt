@@ -1,0 +1,6 @@
+docker run --name mongodb -p 27017:27017 -d -t mongo
+docker ps;
+docker exec -it mongodb mongo;
+show databases;
+use beesdatabase;
+db.createCollection("orderms");
