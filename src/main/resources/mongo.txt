@@ -1,0 +1,4 @@
+docker run -d -p 27017:27017 --name meumongo mongo;
+docker exec -it mongodb mongosh;
+show databases;
+use mydatabase;
