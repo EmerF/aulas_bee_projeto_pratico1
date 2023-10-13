@@ -1,18 +1,26 @@
-package com.ambev.techempowers.model;
+package com.karen.projeto1.model;
 
-import com.ambev.techempowers.interfaces.Gerenciavel;
-import com.ambev.techempowers.interfaces.Perecivel;
 import jakarta.persistence.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "produtos")
 public class Produto {
+
     @Id
     private Number id;
+
     private String nome;
+
     private double valor;
 
     private String descricao;
+
+    public Produto(Number id, String nome, double valor, String descricao) {
+        this.id = id;
+        this.nome = nome;
+        this.valor = valor;
+        this.descricao = descricao;
+    }
 
     public String getNome() {
         return nome;
@@ -30,7 +38,7 @@ public class Produto {
         this.valor = valor;
     }
 
-    public String getId() {
+    public Number getId() {
         return id;
     }
 

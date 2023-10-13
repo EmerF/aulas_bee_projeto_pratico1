@@ -1,4 +1,4 @@
-package com.ambev.techempowers.exceptions;
+package com.karen.projeto1.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

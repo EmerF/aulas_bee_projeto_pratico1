@@ -1,4 +1,4 @@
-package com.ambev.techempowers.exceptions;
+package com.karen.projeto1.exceptions;
 
 public class CustomNotFoundException extends RuntimeException {
     public CustomNotFoundException(String message) {

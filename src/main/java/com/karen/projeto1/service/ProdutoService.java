@@ -1,9 +1,9 @@
-package com.ambev.techempowers.service;
+package com.karen.projeto1.service;
 
-import com.ambev.techempowers.model.Produto;
-import com.ambev.techempowers.repository.ProdutoRepository;
+import com.karen.projeto1.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.karen.projeto1.repository.ProdutoRepository;
 
 import java.util.Optional;
 
@@ -26,6 +26,4 @@ public class ProdutoService {
         return produtoRepository.findById(id);
 
     }
-
-    // Outros métodos de serviço, como buscar, atualizar e excluir produtos
 }

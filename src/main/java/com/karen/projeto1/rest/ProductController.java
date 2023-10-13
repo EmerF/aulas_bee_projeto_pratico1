@@ -1,11 +1,12 @@
-package com.ambev.techempowers.rest;
+package com.karen.projeto1.rest;
 
-import com.ambev.techempowers.model.Produto;
-import com.ambev.techempowers.service.ProdutoService;
+import com.karen.projeto1.exceptions.CustomNotFoundException;
+import com.karen.projeto1.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.karen.projeto1.service.ProdutoService;
 
 /** Teste:
  * curl -X POST -H "Content-Type: application/json" -d '{
@@ -21,14 +22,15 @@ public class ProductController {
     private ProdutoService produtoService;
 
     @PostMapping
-    public Produto createProduct(@RequestBody Produto produto) {
-        if(produto.getNome().equals("erro")){
-
+    public String createProduct(@RequestBody Produto produto) {
+        if(produto.getNome().isEmpty() || produto.getNome() == null){
+            throw new CustomNotFoundException("Erro no cadastro do produto");
         }
-        return produtoService.salvarProduto(produto);
+        produtoService.salvarProduto(produto);
+        return "Produto cadastrado";
     }
     @GetMapping("/error")
-    public ResponseEntity errorProduct() {
+    public ResponseEntity<Void> errorProduct() {
         return new ResponseEntity<>( HttpStatus.NOT_FOUND);
     }
 }
