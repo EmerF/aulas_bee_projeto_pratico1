@@ -43,6 +43,12 @@ VALUES ('Refrigerante', 'Bebida gaseificada'),
        ('Energetico', 'Bebida cafeinada'),
        ('Agua de Coco', 'Bebida natural');
 
+UPDATE produto SET tipo_produto_id = 1 WHERE id IN (1, 2);
+
+UPDATE produto SET tipo_produto_id = 2 WHERE id = 4;
+
+UPDATE produto SET tipo_produto_id = 3 WHERE id = 3;
+
 SELECT *
 FROM produto;
 SELECT *
